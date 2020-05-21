@@ -1,4 +1,41 @@
+/* Primary Colors */
+/* Neutral Colors */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
 body {
-  background-color: blueviolet;
+  font-family: 'Public Sans', sans-serif;
+  color: #9698a6;
+}
+
+.wrapper {
+  padding: 0 2.1em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero .copy {
+  line-height: 1.7em;
+}
+
+.title-h1 {
+  font-size: 2.3em;
+  color: #2d314d;
+  font-weight: 300;
+  line-height: 1.3em;
+}
+
+.button {
+  border: 1px solid red;
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c 0%, #2bb7da 100%);
+  padding: 1em 2.2em;
+  border-radius: 1.5em;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,3 +1,47 @@
+/* Primary Colors */
+$darkBlue: hsl(233, 26%, 24%);
+$limeGreen: hsl(136,65%,51%);
+$brightCyan: hsl(192,70%,51%);
+
+/* Neutral Colors */
+$grayblue: hsl(233,8%,62%);
+$gray: hsl(220,16%,96%);
+$lightGray: hsl(0, 0%, 98%);
+$white: hsl(0,0%,100%);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
 body {
-  background-color: blueviolet;
+  font-family: 'Public Sans', sans-serif;
+  color: $grayblue;
+}
+
+.wrapper {
+  padding: 0 2.1em;
+}
+
+.hero {
+  text-align: center;
+  .copy {
+    line-height: 1.7em;
+  }
+}
+
+.title-h1 {
+  font-size: 2.3em;
+  color: $darkBlue;
+  font-weight: 300;
+  line-height: 1.3em;
+}
+
+.button {
+  border: 1px solid red;
+  background-image: linear-gradient(to right, $limeGreen 0%, $brightCyan 100%);
+  padding: 1em 2.2em;
+  border-radius: 1.5em;
+  color:$white;
 }
