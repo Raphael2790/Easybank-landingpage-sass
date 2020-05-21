@@ -4,5 +4,6 @@
   "description": "Landing page ",
   "main": "index.js",
   "author": "Raphael2790 <rssshev@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
