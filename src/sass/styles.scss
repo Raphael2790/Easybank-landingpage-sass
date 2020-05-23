@@ -1,3 +1,5 @@
+@import '_header';
+
 /* Primary Colors */
 $darkBlue: hsl(233, 26%, 24%);
 $limeGreen: hsl(136,65%,51%);
@@ -9,10 +11,12 @@ $gray: hsl(220,16%,96%);
 $lightGray: hsl(0, 0%, 98%);
 $white: hsl(0,0%,100%);
 
+$wrapperSpace: 0.2em;
+
 * {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body {
@@ -20,26 +24,39 @@ body {
   color: $grayblue;
 }
 
+.copy {
+  line-height: 1.7em;
+  font-size: 0.9em;
+}
+
 .wrapper {
-  padding: 0 2.1em;
+  padding: 0 1.5em;
 }
 
 .hero {
   text-align: center;
   .copy {
-    line-height: 1.7em;
+    margin-bottom: 2.5em;
+  }
+  &-image {
+    height: 300px;
+    background: url(../../static/images/image-mockups.png) center bottom no-repeat, url(../../static/images/bg-intro-mobile.svg) center no-repeat;
+    background-size: 345px, cover;
+    margin:-$wrapperSpace;
+    margin-bottom: 1.2em;
   }
 }
 
 .title-h1 {
-  font-size: 2.3em;
+  font-size: 2.7em;
   color: $darkBlue;
   font-weight: 300;
   line-height: 1.3em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 .button {
-  border: 1px solid red;
   background-image: linear-gradient(to right, $limeGreen 0%, $brightCyan 100%);
   padding: 1em 2.2em;
   border-radius: 1.5em;
